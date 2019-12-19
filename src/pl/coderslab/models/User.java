@@ -7,15 +7,15 @@ public class User {
     private String userName;
     private String email;
     private String password;
-    private int users_group_id;
-
+    private int groupId;
     public User(){
         
     }
-    public User(String userName, String email, String password) {
+    public User(String userName, String email, String password, int group_id) {
         this.userName = userName;
         this.email = email;
         this.hashPassword(password);
+        groupId = group_id;
     }
 
     // funkcja haszująca hasła
@@ -51,12 +51,12 @@ public class User {
         this.password = password;
     }
 
-    public int getUsers_group_id() {
-        return users_group_id;
+    public int getGroupId() {
+        return groupId;
     }
 
-    public void setUsers_group_id(int users_group_id) {
-        this.users_group_id = users_group_id;
+    public void setGroupId(int groupId) {
+        this.groupId = groupId;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class User {
                 ", userName='" + userName + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", users_group_id=" + users_group_id +
+                ", groupId=" + groupId +
                 '}';
     }
 }
