@@ -7,7 +7,7 @@ public class Aplication {
 
         User user1 = new User("Mateusz","mk.gmail.com","haslostulecia",1);
         UserDao userDao1 = new UserDao();
-        System.out.println(user1 = userDao1.create(user1));
+        System.out.println(userDao1.create(user1));
 
 //        User user = new User("Mateusz","mateusz_kocierz@wp.pl","haslo");
 //
